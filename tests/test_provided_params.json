@@ -1,0 +1,28 @@
+{
+  "function_name": "CerrarSesionFn",
+  "test_type": "provided_params",
+  "args": {
+    "summary": "Cierre de prueba sin acciones pendientes"
+  },
+  "widget_params": {},
+  "prompt": "",
+  "event_type": "function_call",
+  "extra_params": {
+    "user_phone_number": "+56976025397",
+    "agent_phone_number": "1051240901403291",
+    "tool_calls": [
+      {
+        "id": "test_call_cerrar_sesion",
+        "name": "CerrarSesionFn",
+        "args": {
+          "summary": "Cierre de prueba sin acciones pendientes"
+        }
+      }
+    ]
+  },
+  "files": [],
+  "metadata": {
+    "description": "Test CerrarSesionFn with explicit params",
+    "expected_status": "success"
+  }
+}

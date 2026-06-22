@@ -1,0 +1,38 @@
+function:
+  name: CerrarSesionFn
+  runtime: python3.12
+  handler: handler.lambda_handler
+  description: |
+    Cierra la sesion de orquestacion del conductor de Gammavet cuando la ruta o
+    conversacion ya no requiere mas acciones. No modifica rutas, paradas ni
+    retiros.
+  timeout: 120
+  memory_size: 256
+  layers:
+    - foundationMinimal
+    - foundationApi
+
+  parameters:
+    required: []
+    optional:
+      - name: summary
+        type: string
+        description: Resumen opcional de cierre.
+      - name: driver_id
+        type: string
+        description: ID del conductor si esta disponible.
+      - name: driver_phone
+        type: string
+        description: Telefono WhatsApp del conductor si esta disponible.
+      - name: ticket_id
+        type: string
+        description: ID opcional de ticket o sesion para correlacion.
+
+  widget:
+    enabled: false
+    type: dynamic_widget
+    params: []
+
+  testing:
+    handles_files: false
+    produces_files: false
