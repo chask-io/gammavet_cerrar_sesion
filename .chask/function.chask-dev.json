@@ -1,0 +1,8 @@
+{
+	"function_uuid": "09af90f0-6ff7-4781-bb35-bba7d08da534",
+	"organization_id": "c186a320-7f84-4004-b591-1b9880fb7bfd",
+	"last_published_at": "2026-06-22T20:03:09.903Z",
+	"function_arn": "CerrarSesionFn-bb35bba7d08da534",
+	"function_name": "CerrarSesionFn",
+	"git_ref": "main"
+}
